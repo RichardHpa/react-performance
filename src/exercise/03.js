@@ -30,6 +30,7 @@ function Menu({
     </ul>
   )
 }
+Menu = React.memo(Menu)
 // 🐨 Memoize the Menu here using React.memo
 
 function ListItem({
@@ -57,6 +58,7 @@ function ListItem({
   )
 }
 // 🐨 Memoize the ListItem here using React.memo
+ListItem = React.memo(ListItem)
 
 function App() {
   const forceRerender = useForceRerender()
